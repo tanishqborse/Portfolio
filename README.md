@@ -1,73 +1,44 @@
-# Welcome to your Lovable project
+# Cyber Aura Forge — Personal Portfolio&nbsp;🌐⚡️
 
-## Project info
+[![Build](https://img.shields.io/github/actions/workflow/status/tanishqborse/Portfolio/ci.yml?label=build)](../../actions)&nbsp;
+[![License](https://img.shields.io/github/license/tanishqborse/Portfolio)](LICENSE)&nbsp;
+[![Last Commit](https://img.shields.io/github/last-commit/tanishqborse/Portfolio)](../../commits)
 
-**URL**: https://lovable.dev/projects/d28cd282-d3a1-4c6c-b0bc-aa882d85f62d
+> **Welcome!** This repo is my living playground for modern front-end craft, interactive 3-D, and _baked-in_ security best-practices.  
+> **TL;DR** — `git clone`, `npm i`, `npm run dev`, start hacking.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## ✨ Key Highlights
 
-**Use Lovable**
+| **Area** | **What you’ll find** |
+| :-- | :-- |
+| **Stack** | Vite + React (⚛️ powered by **SWC**), TypeScript, Tailwind CSS, [shadcn/ui], Three.js |
+| **Security** | Strict **Content-Security-Policy**, hardened HTTP headers, dependency auditing via `npm audit`, public **`.well-known/security.txt`** |
+| **DX** | Hot-reload dev server (`localhost:8080`), path aliases `@/...`, ESLint + Prettier, **Bun** lock-file for ultra-fast installs |
+| **3-D / Canvas** | Lazy-loaded Three.js scene split into a vendor chunk |
+| **Accessibility** | Radix UI primitives & semantic HTML throughout |
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d28cd282-d3a1-4c6c-b0bc-aa882d85f62d) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔐 Built-in Security Hardening
 
-**Use your preferred IDE**
+* **HTTP headers** – injected by `vite.config.ts`  
+  `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, and a minimal CSP.
+* **CSP helper** – reusable policy constants live in `src/lib/security.ts`.
+* **Safe defaults** – no inline `<script>` tags, no `eval` in production, strict MIME sniffing.
+* **Vulnerability disclosure** – `public/.well-known/security.txt` advertises a contact channel.
+* **Dependency scanning** – run `npm audit --production` before each release (CI stub included).
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
+## Repository 
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d28cd282-d3a1-4c6c-b0bc-aa882d85f62d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+cyber-aura-forge/
+├─ src/
+│  ├─ components/   # reusable UI
+│  ├─ pages/        # routed pages
+│  ├─ lib/          # utilities (security, helpers, …)
+│  └─ main.tsx      # app entry
+├─ public/          # static assets & security.txt
+├─ vite.config.ts   # build & dev-server config
+└─ README.md        # you are here 🚀
