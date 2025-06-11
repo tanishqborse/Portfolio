@@ -1,0 +1,102 @@
+
+import React from 'react';
+import { ExternalLink, Github, Brain, Shield, Cloud, Lock, Network, Smartphone } from 'lucide-react';
+
+export const Projects = () => {
+  const projects = [
+    {
+      title: "AI-Driven Dynamic Malware Detection",
+      description: "Advanced machine learning system for real-time malware identification and classification using deep neural networks.",
+      icon: <Brain size={32} />,
+      tags: ["Python", "TensorFlow", "Deep Learning", "Malware Analysis"],
+      color: "from-purple-600 to-blue-600"
+    },
+    {
+      title: "Secure Web Shield",
+      description: "Comprehensive web application security platform with automated vulnerability scanning and threat mitigation.",
+      icon: <Shield size={32} />,
+      tags: ["Web Security", "OWASP", "Vulnerability Assessment", "Automated Testing"],
+      color: "from-green-600 to-teal-600"
+    },
+    {
+      title: "Enterprise Infrastructure Security Lab",
+      description: "Complete cybersecurity lab environment for training and testing enterprise security solutions.",
+      icon: <Network size={32} />,
+      tags: ["Network Security", "Infrastructure", "Pen Testing", "Lab Environment"],
+      color: "from-red-600 to-pink-600"
+    },
+    {
+      title: "AWS Cybersecurity Report",
+      description: "Comprehensive analysis and implementation of cybersecurity best practices for AWS cloud environments.",
+      icon: <Cloud size={32} />,
+      tags: ["AWS", "Cloud Security", "Risk Assessment", "Compliance"],
+      color: "from-yellow-600 to-orange-600"
+    },
+    {
+      title: "Kubernetes Security Hardening",
+      description: "Security framework for containerized applications with automated compliance checking and threat detection.",
+      icon: <Lock size={32} />,
+      tags: ["Kubernetes", "Container Security", "DevSecOps", "Automation"],
+      color: "from-indigo-600 to-purple-600"
+    },
+    {
+      title: "Next-Gen 911 Risk Research",
+      description: "Research project analyzing cybersecurity risks in next-generation emergency communication systems.",
+      icon: <Smartphone size={32} />,
+      tags: ["Research", "Emergency Systems", "Risk Analysis", "IoT Security"],
+      color: "from-cyan-600 to-blue-600"
+    }
+  ];
+
+  return (
+    <section id="projects" className="py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-white mb-4">Featured Projects</h2>
+          <div className="w-20 h-1 bg-teal-400 mx-auto"></div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div key={index} className="group bg-gray-900 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all transform hover:scale-[1.02]">
+              <div className={`h-32 bg-gradient-to-br ${project.color} flex items-center justify-center text-white`}>
+                {project.icon}
+              </div>
+              
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-gray-400 mb-4 leading-relaxed">
+                  {project.description}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tags.map((tag, tagIndex) => (
+                    <span 
+                      key={tagIndex}
+                      className="bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-xs font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <div className="flex space-x-4">
+                  <button className="flex items-center space-x-2 text-teal-400 hover:text-white transition-colors">
+                    <ExternalLink size={16} />
+                    <span className="text-sm font-medium">View Details</span>
+                  </button>
+                  <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors">
+                    <Github size={16} />
+                    <span className="text-sm font-medium">Code</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};

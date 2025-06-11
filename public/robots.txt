@@ -1,0 +1,9 @@
+
+User-agent: *
+Allow: /
+Disallow: /.well-known/
+
+Sitemap: https://tanishqborse.com/sitemap.xml
+
+# Security note: This robots.txt helps prevent crawling of security files
+# while allowing legitimate search engine indexing
