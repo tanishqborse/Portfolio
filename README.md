@@ -1,4 +1,4 @@
-# Cyber Aura Forge — Personal Portfolio&nbsp;🌐⚡️
+# Personal Portfolio&nbsp;🌐⚡️
 
 [![Build](https://img.shields.io/github/actions/workflow/status/tanishqborse/Portfolio/ci.yml?label=build)](../../actions)&nbsp;
 [![License](https://img.shields.io/github/license/tanishqborse/Portfolio)](LICENSE)&nbsp;
