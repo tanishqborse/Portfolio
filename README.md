@@ -1,8 +1,5 @@
 # Personal Portfolio&nbsp;🌐⚡️
 
-[![Build](https://img.shields.io/github/actions/workflow/status/tanishqborse/Portfolio/ci.yml?label=build)](../../actions)&nbsp;
-[![License](https://img.shields.io/github/license/tanishqborse/Portfolio)](LICENSE)&nbsp;
-[![Last Commit](https://img.shields.io/github/last-commit/tanishqborse/Portfolio)](../../commits)
 
 > **Welcome!** This repo is my living playground for modern front-end craft, interactive 3-D, and _baked-in_ security best-practices.  
 > **TL;DR** — `git clone`, `npm i`, `npm run dev`, start hacking.
