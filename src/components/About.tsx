@@ -42,7 +42,7 @@ export const About = () => {
                   <p className="text-teal-400 font-medium">Rochester Institute of Technology</p>
                   <div className="flex items-center text-gray-400 mt-1">
                     <Calendar size={16} className="mr-2" />
-                    <span>Expected May 2025</span>
+                    <span>May 2025</span>
                   </div>
                 </div>
               </div>
