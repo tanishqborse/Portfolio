@@ -10,7 +10,7 @@ export const Certifications = () => {
       issuer: "EC-Council",
       date: "2024",
       status: "Active",
-      verificationUrl: "/Certification/ceh.pdf",
+      verificationUrl: "/portfolio/Certification/ceh.pdf",
       description: "Comprehensive ethical hacking and penetration testing certification"
     },
     {
