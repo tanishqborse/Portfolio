@@ -53,7 +53,7 @@ export const Hero = () => {
                <img
                   src={`${import.meta.env.BASE_URL}profile.jpeg`}
                   alt="Profile"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-transparent rounded-full animate-pulse"></div>
