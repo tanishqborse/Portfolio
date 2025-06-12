@@ -48,19 +48,25 @@ export const Hero = () => {
 
           {/* Profile Image Placeholder */}
           <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-teal-600 to-teal-800 rounded-full flex items-center justify-center text-6xl font-bold text-white shadow-2xl">
-               <img
-                  src={`${import.meta.env.BASE_URL}profile.jpeg`}
-                  alt="Profile"
-                  className="w-full h-full object-cover rounded-full"
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-transparent rounded-full animate-pulse"></div>
+          <div className="relative w-80 h-80">
+            
+            {/* Gradient Background Circle */}
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-teal-800 rounded-full shadow-2xl"></div>
+
+            {/* Actual Profile Image clipped into circle */}
+            <div className="absolute inset-0 rounded-full overflow-hidden">
+              <img
+                src={`${import.meta.env.BASE_URL}profile.jpeg`}
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
+
+            {/* Pulsating glow layer */}
+            <div className="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-transparent rounded-full animate-pulse"></div>
+
           </div>
         </div>
-      </div>
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
