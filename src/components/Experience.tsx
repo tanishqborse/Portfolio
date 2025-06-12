@@ -10,10 +10,10 @@ export const Experience = () => {
       period: "May 2024 – Present",
       icon: <Award size={24} />,
       achievements: [
-        "Led development of AI-driven cybersecurity solutions",
-        "Secured $15K Lockheed Martin innovation award",
-        "Built enterprise-grade threat detection platform",
-        "Established strategic partnerships with Fortune 500 companies"
+        "Led development of Lightweight Cryptographic Attestation Framework",
+        "Secured Innovation in Defense Grant from BMNT ventures/CMP",
+        "Developed Threat Models for IoT devices",
+        "Implemented secure boot and attestation protocols"
       ]
     },
     {
@@ -23,8 +23,8 @@ export const Experience = () => {
       icon: <Users size={24} />,
       achievements: [
         "Guided 300+ students through cybersecurity fundamentals",
-        "Designed and delivered 50+ hands-on security labs",
-        "Mentored students in penetration testing and secure coding",
+        "Designed and delivered 20+ hands-on security labs",
+        "Mentored students in Authentication and Security Principles",
         "Achieved 95% student satisfaction rating"
       ]
     },
@@ -36,7 +36,7 @@ export const Experience = () => {
       achievements: [
         "Developed SIEM platform reducing security workload by 35%",
         "Implemented automated threat detection algorithms",
-        "Conducted vulnerability assessments for client infrastructures",
+        "Conducted vulnerability assessments for client infrastructure",
         "Streamlined incident response procedures"
       ]
     },

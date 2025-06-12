@@ -10,7 +10,7 @@ export const Certifications = () => {
       issuer: "EC-Council",
       date: "2024",
       status: "Active",
-      verificationUrl: "#",
+      verificationUrl: "${import.meta.env.BASE_URL}certifications/ceh-certificate.pdf",
       description: "Comprehensive ethical hacking and penetration testing certification"
     },
     {
@@ -22,11 +22,11 @@ export const Certifications = () => {
       description: "Information Systems Security Professional certification"
     },
     {
-      name: "Security+",
-      issuer: "CompTIA",
-      date: "2023",
+      name: "Masters in Cybersecurity",
+      issuer: "Rochester Institute of Technology",
+      date: "2025",
       status: "Active",
-      verificationUrl: "#",
+      verificationUrl: "https://lnkd.in/e8QMKcuQ",
       description: "Foundation-level security skills and knowledge certification"
     }
   ];
