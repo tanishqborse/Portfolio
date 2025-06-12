@@ -50,7 +50,11 @@ export const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-teal-600 to-teal-800 rounded-full flex items-center justify-center text-6xl font-bold text-white shadow-2xl">
-                TB
+               <img
+                  src={`${import.meta.env.BASE_URL}profile.jpeg`}
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute inset-0 bg-gradient-to-br from-teal-400/20 to-transparent rounded-full animate-pulse"></div>
             </div>
