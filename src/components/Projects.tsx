@@ -128,7 +128,7 @@ export const Projects = () => {
         <Dialog open={selectedProject !== null} onClose={() => setSelectedProject(null)} className="relative z-50">
           <div className="fixed inset-0 bg-black/60" aria-hidden="true" />
           <div className="fixed inset-0 flex items-center justify-center p-4">
-            <div className="bg-gray-900 rounded-lg max-w-2xl w-full p-6">
+            <div className="bg-gray-900 rounded-lg max-w-2xl w-full p-6 relative shadow-xl">
               {selectedProject && (
                 <>
                   <img src={selectedProject.details.image} alt={selectedProject.title} className="rounded mb-4" />
