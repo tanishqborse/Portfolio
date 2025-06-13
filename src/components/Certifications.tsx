@@ -16,7 +16,7 @@ export const Certifications = () => {
     {
       name: "CISSP",
       issuer: "ISC2",
-      date: "2023",
+      date: "2025",
       status: "In Progress",
       verificationUrl: "#",
       description: "Information Systems Security Professional certification"
