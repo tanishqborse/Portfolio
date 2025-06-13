@@ -85,7 +85,7 @@ export const ResumeDownload = () => {
             </div>
 
             <p className="text-xs text-gray-500 text-center">
-              PDF format • 2 pages • Optimized for ATS systems
+              PDF format • 1 page • 192 KB • Last updated: June 2025
             </p>
           </CardContent>
         </Card>
