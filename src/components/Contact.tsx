@@ -60,27 +60,38 @@ export const Contact = () => {
 
     setIsSubmitting(true);
     
-    try {
-      // For now, just show success message
-      // In production, you would integrate with a secure form service
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      
-      // Reset form
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfCXpx6YIsP_D5w_AxXpVN3GzEgXwDLeOM6iFjBwbzoeDAd3A/formResponse";
 
+    const formDataToSend = new FormData();
+    formDataToSend.append("entry.1575838545", formData.name); 
+    formDataToSend.append("entry.916429188", formData.email); 
+    formDataToSend.append("entry.1419045934", formData.message);
+
+  try {
+    await fetch(googleFormUrl, {
+      method: "POST",
+      mode: "no-cors",
+      body: formDataToSend
+    });
+
+    toast({
+      title: "Message Sent!",
+      description: "Thank you for your message. I'll get back to you soon.",
+    });
+
+    setFormData({ name: '', email: '', message: '' });
+
+  } catch (error) {
+    console.error("Error submitting form: ", error);
+    toast({
+      title: "Error",
+      description: "Failed to send message. Please try again.",
+      variant: "destructive"
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
   return (
     <section id="contact" className="py-20 bg-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
