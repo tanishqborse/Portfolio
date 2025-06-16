@@ -5,6 +5,18 @@ import { ExternalLink, Github, Brain, Shield, Cloud, Lock, Network, Smartphone }
 export const Projects = () => {
   const projects = [
     {
+      title: "AI-SOC Copilot",
+      description: "A serverless AI-driven Security Operations Center (SOC) Copilot.",
+      icon: <Brain size={32} />,
+      tags: ["Python", "GCP", "Google BigQuery", "Pub/Sub" , "Vertex AI Gemini", "Terraform", "Powershell", "Looker Studio", "Git + GitHub"],
+      color: "from-purple-600 to-blue-600",
+      details: {
+        summary: "This project implements a serverless AI-driven Security Operations Center (SOC) Copilot that analyzes security logs, maps MITRE ATT&CK TTPs, classifies threat severity, and recommends remediation steps, fully automated.",
+        tools: ["Python", "GCP", "Google BigQuery", "Pub/Sub" , "Vertex AI Gemini", "Terraform", "Powershell", "Looker Studio", "Git + GitHub"],
+        image: `${import.meta.env.BASE_URL}Projects/aisoc.png`
+      }
+    },
+    {
       title: "AI-Driven Dynamic Malware Detection",
       description: "Advanced machine learning system for real-time malware identification and classification using deep neural networks.",
       icon: <Brain size={32} />,
@@ -59,7 +71,7 @@ export const Projects = () => {
       tags: ["Kubernetes", "Container Security", "DevSecOps", "Automation"],
       color: "from-indigo-600 to-purple-600",
       details: {
-        summary: "Automated hardening of Kubernetes clusters with runtime monitoring and continuous compliance pipelines.",
+        summary: "This project focuses on building an automated Kubernetes Security Hardening pipeline that continuously monitors clusters for misconfigurations, vulnerabilities, runtime threats, and code issues across the entire SDLC (Software Development Life Cycle). The solution integrates multiple open-source security tools into a single automated pipeline to provide proactive threat detection, vulnerability management, and compliance monitoring; ultimately reducing supply-chain risks and enhancing cluster resiliency.",
         tools: ["Kube-Bench", "Trivy", "Falco", "OPA", "GitHub Actions"],
         image: `${import.meta.env.BASE_URL}Projects/kubernetes.png`
       }

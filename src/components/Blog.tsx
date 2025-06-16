@@ -6,34 +6,34 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 export const Blog = () => {
   const articles = [
     {
-      title: "AI-Driven Threat Detection: The Future of Cybersecurity",
-      excerpt: "Exploring how machine learning algorithms are revolutionizing threat detection and incident response in modern security operations.",
-      date: "2024-03-15",
+      title: "Strengthening Firmware Integrity: Building the Foundation of a Secure Future",
+      excerpt: "Strengthening firmware integrity in embedded devices is critical to ensuring the security, reliability, and trustworthiness of IoT systems across industries, as they face growing threats at the foundational hardware-software boundary.",
+      date: "2025-03-15",
       readTime: "8 min read",
-      category: "AI Security",
-      link: "#"
+      category: "Embedded Security",
+      link: "https://camasecurity.com/blog/blog_1/"
     },
     {
-      title: "Advanced Malware Analysis Techniques",
-      excerpt: "Deep dive into static and dynamic analysis methods for identifying and mitigating sophisticated malware threats.",
-      date: "2024-02-28",
-      readTime: "12 min read",
-      category: "Malware Analysis",
+      title: "AI- SOC Copilot: Revolutionizing Security Operations with AI",
+      excerpt: "Deep dive into advanced AI-driven Security Operations Center (SOC) Copilot that automates threat detection and response.",
+      date: "2025-06-25",
+      readTime: "In Progress",
+      category: "SOC Automation",
       link: "#"
     },
     {
       title: "Securing Cloud Infrastructure: Best Practices",
       excerpt: "Comprehensive guide to implementing security controls and monitoring in cloud environments.",
-      date: "2024-02-10",
-      readTime: "10 min read",
+      date: "2025-07-15",
+      readTime: "Upcoming",
       category: "Cloud Security",
       link: "#"
     },
     {
       title: "Zero Trust Architecture Implementation",
       excerpt: "Practical approaches to implementing zero trust principles in enterprise environments.",
-      date: "2024-01-22",
-      readTime: "15 min read",
+      date: "2025-08-25",
+      readTime: "Upcoming",
       category: "Architecture",
       link: "#"
     }
