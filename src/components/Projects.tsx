@@ -49,7 +49,7 @@ export const Projects = () => {
       details: {
         summary: "Full enterprise infrastructure simulation for vulnerability assessment, SOC runbooks and red-blue team exercises.",
         tools: ["VMware", "Active Directory", "SIEM", "Firewalls", "Kali Linux"],
-        image: `${import.meta.env.BASE_URL}Projects/enterprise.png`
+        image: `${import.meta.env.BASE_URL}Projects/aws.png`
       },githubUrl:"https://github.com/tanishqborse/"
     },
     {
