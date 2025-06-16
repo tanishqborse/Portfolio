@@ -14,7 +14,7 @@ export const Projects = () => {
         summary: "This project implements a serverless AI-driven Security Operations Center (SOC) Copilot that analyzes security logs, maps MITRE ATT&CK TTPs, classifies threat severity, and recommends remediation steps, fully automated.",
         tools: ["Python", "GCP", "Google BigQuery", "Pub/Sub" , "Vertex AI Gemini", "Terraform", "Powershell", "Looker Studio", "Git + GitHub"],
         image: `${import.meta.env.BASE_URL}Projects/aisoc.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/AI-SOC-Copilot"
     },
     {
       title: "AI-Driven Dynamic Malware Detection",
@@ -26,7 +26,7 @@ export const Projects = () => {
         summary: "This project detects malware using API call sequences and self-supervised Transformers for better zero-day generalization.",
         tools: ["Python", "TensorFlow", "PyTorch", "Nebula", "BPE Tokenizer"],
         image: `${import.meta.env.BASE_URL}Projects/malware.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/AI-Powered-Malware-Detection-System"
     },
     {
       title: "Secure Web Shield",
@@ -38,7 +38,7 @@ export const Projects = () => {
         summary: "Automated security scanner for OWASP top 10 with live reporting dashboard.",
         tools: ["OWASP ZAP", "Burp Suite", "React", "Node.js"],
         image: `${import.meta.env.BASE_URL}Projects/webshield.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/PythonWebServer"
     },
     {
       title: "Enterprise Infrastructure Security Lab",
@@ -50,7 +50,7 @@ export const Projects = () => {
         summary: "Full enterprise infrastructure simulation for vulnerability assessment, SOC runbooks and red-blue team exercises.",
         tools: ["VMware", "Active Directory", "SIEM", "Firewalls", "Kali Linux"],
         image: `${import.meta.env.BASE_URL}Projects/enterprise.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/"
     },
     {
       title: "AWS Cybersecurity Report",
@@ -62,7 +62,7 @@ export const Projects = () => {
         summary: "Secured AWS cloud workloads following CIS benchmark, NIST 800-53 mappings and threat modeling of cloud-native attack paths.",
         tools: ["AWS IAM", "GuardDuty", "Inspector", "S3 Encryption", "Security Hub"],
         image: `${import.meta.env.BASE_URL}Projects/aws.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/AWS-Cybersecurity-Report-"
     },
     {
       title: "Kubernetes Security Hardening",
@@ -74,7 +74,7 @@ export const Projects = () => {
         summary: "This project focuses on building an automated Kubernetes Security Hardening pipeline that continuously monitors clusters for misconfigurations, vulnerabilities, runtime threats, and code issues across the entire SDLC (Software Development Life Cycle). The solution integrates multiple open-source security tools into a single automated pipeline to provide proactive threat detection, vulnerability management, and compliance monitoring; ultimately reducing supply-chain risks and enhancing cluster resiliency.",
         tools: ["Kube-Bench", "Trivy", "Falco", "OPA", "GitHub Actions"],
         image: `${import.meta.env.BASE_URL}Projects/kubernetes.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/Secure-Kubernetes-Deployment"
     },
     {
       title: "Next-Gen 911 Risk Research",
@@ -86,7 +86,7 @@ export const Projects = () => {
         summary: "Analyzed IoT and emergency communication protocols (NG911) for potential adversarial attacks against call-routing and location systems.",
         tools: ["NG911", "IoT", "Zigbee", "Adversarial Modeling", "Denial of Service"],
         image: `${import.meta.env.BASE_URL}Projects/911.png`
-      }
+      },githubUrl:"https://github.com/tanishqborse/AI-SOC-Copilot"
     }
   ];
 
